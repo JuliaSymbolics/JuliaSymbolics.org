@@ -55,7 +55,7 @@ blocks offered by JuliaSymbolics as the underpinning of their symbolic packages 
 - [**DataDrivenDiffEq.jl**](https://github.com/SciML/DataDrivenDiffEq.jl): Automatic identification of equations from data
     - Automated construction of ODEs and DAEs from data
     - Representations of Koopman operators and Dynamic Mode Decomposition (DMD)
-    - 
+
 - [**SymbolicRegression.jl**](https://github.com/MilesCranmer/SymbolicRegression.jl): Distributed High-Performance symbolic regression in Julia
     - Parallelized generic algorithms for finding equations from data
     - Pareto frontier based scoring
