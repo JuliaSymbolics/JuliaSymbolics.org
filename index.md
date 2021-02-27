@@ -51,3 +51,15 @@ blocks offered by JuliaSymbolics as the underpinning of their symbolic packages 
     - Symbolically build and represent large systems of chemical reactions
     - Generate code for ODEs, SDEs, continuous-time Markov Chains, and more
     - Simulate the models using the SciML ecosystem with O(1) Gillespie methods
+
+- [**DataDrivenDiffEq.jl**](https://github.com/SciML/DataDrivenDiffEq.jl): Automatic identification of equations from data
+    - Automated construction of ODEs and DAEs from data
+    - Representations of Koopman operators and Dynamic Mode Decomposition (DMD)
+    - 
+- [**SymbolicRegression.jl**](https://github.com/MilesCranmer/SymbolicRegression.jl): Distributed High-Performance symbolic regression in Julia
+    - Parallelized generic algorithms for finding equations from data
+    - Pareto frontier based scoring
+
+- [**ReversePropagation.jl**](https://github.com/dpsanders/ReversePropagation.jl): Source-to-source reverse mode automatic differentiation
+    - Automated tracing of code and construction of backpropagation equations
+    - Composes with symbolic transformation and simplification functionality
