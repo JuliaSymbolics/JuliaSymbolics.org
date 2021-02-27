@@ -173,7 +173,7 @@ on our sights are:
 - High performance symbolic root finding
 - Integrating modern techniques like [deep learning to accelerate and improve symbolic rule application](https://arxiv.org/pdf/1912.01412.pdf)
 - Tools for [transforming generated equations to have minimal floating point error](https://herbie.uwplse.org/)
-- A full benchmarking suite
+- A full reproducible benchmarking suite
 
 ## How You Can Join The Process
 
