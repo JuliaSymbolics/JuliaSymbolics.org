@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <link rel="stylesheet" href="/SymbolicUtils.jl/libs/highlight/github.min.css">
+   
+  <link rel="stylesheet" href="/SymbolicUtils.jl/css/franklin.css">
+<link rel="stylesheet" href="/SymbolicUtils.jl/css/poole_hyde.css">
+<link rel="stylesheet" href="/SymbolicUtils.jl/css/custom.css">
+<!-- style adjustments -->
+<style>
+  html {font-size: 17px;}
+  .franklin-content {position: relative; padding-left: 8%; padding-right: 5%;}
+  @media (min-width: 940px) {
+    .franklin-content {width: 100%; margin-left: auto; margin-right: auto;}
+  }
+  @media (max-width: 768px) {
+    .franklin-content {padding-left: 6%; padding-right: 6%;}
+  }
+</style>
+<link rel="icon" href="/SymbolicUtils.jl/assets/favicon.png">
+
+   <title>JuliaSymbolics — Symbolic programming in Julia</title>  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1 class="sidebar-title"><a href="/SymbolicUtils.jl/">JuliaSymbolics</a></h1>
+      <br>
+    </div>
+    <style>
+@media (min-width: 768px) {
+    .sidebar-nav {
+    }
+}
+    .sidebar .container.sidebar-sticky {
+        top: 4rem;
+    }
+    .sidebar-nav .sidebar-nav-item.active {
+        box-sizing: border-box;
+        border-bottom: 1px #f1f1f1 solid;
+        margin-right: -1em;
+        margin-left: -0.5em;
+        padding-left: 0.5em;
+        color: white;
+        font-weight: normal !important;
+    }
+    .sidebar-nav .sidebar-nav-item {
+        color: #cccccc;
+        margin: 0.25em 0;
+    }
+    </style>
+    <nav class="sidebar-nav" style="opacity: 0.9">
+      <a class="sidebar-nav-item active" href="/SymbolicUtils.jl/">Overview</a>
+      <a class="sidebar-nav-item" href="https://juliasymbolics.github.io/SymbolicUtils.jl">Symbolics.jl</a>
+      <a class="sidebar-nav-item" href="https://juliasymbolics.github.io/SymbolicUtils.jl">SymbolicUtils.jl</a>
+    </nav>
+
+  </div>
+  <div style="font-size: 0.85em; bottom: 3em; position: fixed">
+      <a href="https://github.com/JuliaSymbolics/">Go to GitHub organization &rarr;</a> <br>  <br>
+
+      <a href="https://julialang.org/"><img src="https://raw.githubusercontent.com/JuliaLang/julia-logo-graphics/master/images/julia-logo-dark.svg" height="32" style="display: inline-block; margin-bottom: -8px; opacity: 0.7">
+          powered.</a>
+  </div>
+</div>
+<div class="content container">
+
+<!-- Content appended here -->
+<div class="franklin-content">
+<h1>JuliaSymbolics &mdash; home</h1>
+
+
+<p style="font-size: 1.25em; line-height: 1.67em; text-align: center; margin: 1em 0; color: #111;">
+<a href="https://github.com/JuliaSymbolics/">JuliaSymbolics</a> is an organization for Julia packages related to symbolic programming.
+<p>It is currently home to two main packages:</p>
+<ul>
+<li><p><a href="https://github.com/JuliaSymbolics/Symbolics.jl"><strong>Symbolics.jl</strong></a> – A fast symbolic system designed for everyday symbolic computing needs. It features:</p>
+<ul>
+<li><p>Variables and expressions that carry type information</p>
+</li>
+<li><p>Symbolic differentiation</p>
+</li>
+<li><p>Fast jacobian and hessian sparsity computations</p>
+</li>
+<li><p>Generate code from symbolic expressions</p>
+</li>
+<li><p>Solving linear symbolic systems &#40;more systems planned for the future&#41;</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://github.com/JuliaSymbolics/SymbolicUtils.jl"><strong>SymbolicUtils.jl</strong></a> – The low-level representation and expression rewriting system:</p>
+<ul>
+<li><p>Stores common expressions in a fast canonical form that is simplified by default</p>
+</li>
+<li><p>Rule-based simplification for further simplification</p>
+</li>
+<li><p>Polynomial-normalization &#40;i.e. use polynomial algebra to expand expressions&#41;</p>
+</li>
+<li><p>Tools for composing code.</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="page-foot">
+  <div class="copyright">
+    &copy; Shashi Gowda, Yingbo Ma, Mason Protter. Last modified: February 27, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    </div>  <!-- div: content container -->
+    
+    <script>
+        var els =  document.querySelectorAll(".language-julia")
+        for (var i=0, l = els.length; i < l; i++) {
+            var el = els[i]
+            var out = el.parentNode.nextSibling
+            if (out.tagName === "PRE") {
+                out.className = out.className + " code-output"
+            }
+        }
+    </script>
+    
+        
+
+
+    
+  </body>
+</html>
