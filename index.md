@@ -11,7 +11,7 @@ where appropriate -->
 building a fully-featured and high performance Computer Algebra System (CAS) for the Julia
 programming language. It is currently home to two main packages:
 
-- [**Symbolics.jl**](https://github.com/JuliaSymbolics/Symbolics.jl) -- A fast symbolic system designed for everyday symbolic computing needs. It features:
+- [**Symbolics.jl**](https://github.com/JuliaSymbolics/Symbolics.jl/dev) -- A fast symbolic system designed for everyday symbolic computing needs. It features:
     - Symbolic arithmetic with type information and multiple dispatch
     - Symbolic polynomials and trigonometric functions
     - Pattern matching, simplification and substitution
