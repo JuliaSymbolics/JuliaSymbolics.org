@@ -5,22 +5,26 @@
 the config file by setting hasmath = false for instance and just setting it to true
 where appropriate -->
 
-~~~
-<h1>JuliaSymbolics &mdash; home</h1>
-~~~
+# JuliaSymbolics - Home
 
-~~~
-<p style="font-size: 1.25em; line-height: 1.67em; text-align: center; margin: 1em 0; color: #111;">
-<a href="https://github.com/JuliaSymbolics/">JuliaSymbolics</a> is an organization for Julia packages related to symbolic programming.~~~
-
-It is currently home to two main packages:
+[JuliaSymbolics](https://github.com/JuliaSymbolics/) is the Julia organization dedicated to
+building a fully-featured and high performance Computer Algebra System (CAS) for the Julia
+programming language. It is currently home to two main packages:
 
 - [**Symbolics.jl**](https://github.com/JuliaSymbolics/Symbolics.jl) -- A fast symbolic system designed for everyday symbolic computing needs. It features:
-    - Variables and expressions that carry type information
-    - Symbolic differentiation
-    - Fast jacobian and hessian sparsity computations
-    - Generate code from symbolic expressions
-    - Solving linear symbolic systems (more systems planned for the future)
+    - Symbolic arithmetic with type information and multiple dispatch
+    - Symbolic polynomials and trigonometric functions
+    - Pattern matching, simplification and substitution
+    - Differentiation
+    - Symbolic linear algebra (factorizations, inversion, determinants, eigencomputations, etc.)
+    - Discrete math (representations of summations, products, binomial coefficients, etc.)
+    - Logical and Boolean expressions
+    - Symbolic equation solving and conversion to arbitrary precision
+    - Support for non-standard algebras (non-commutative symbols and customizable rulesets)
+    - Special functions (list provided by [SpecialFunctions.jl](https://github.com/JuliaMath/SpecialFunctions.jl))
+    - Automatic conversion of Julia code to symbolic code
+    - Generation of (high performance and parallel) functions from symbolic expressions
+    - Fast automated sparsity detection and generation of sparse Jacobian and Hessians
 
 
 - [**SymbolicUtils.jl**](https://github.com/JuliaSymbolics/SymbolicUtils.jl) -- The low-level representation and expression rewriting system:
