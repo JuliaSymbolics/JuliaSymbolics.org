@@ -74,8 +74,8 @@
 <!-- Content appended here -->
 <div class="franklin-content"><h1 id="juliasymbolics_roadmap_a_modern_computer_algebra_system_for_a_modern_language"><a href="#juliasymbolics_roadmap_a_modern_computer_algebra_system_for_a_modern_language" class="header-anchor">JuliaSymbolics Roadmap: A Modern Computer Algebra System for a Modern Language</a></h1>
 <p>We need new Computer Algebra Systems &#40;CAS&#41; for this new era of computing. We need a CAS that dispatches in the multiple ways we think. We need a CAS that scales exponentially like our problems. We need a CAS that integrates with our package ecosystem, letting people extend parts and contribute back to the core library all in one language. We need a modern CAS in a modern language.</p>
-<p>Symbolics.jl is the answer. Symbolics.jl is a pure Julia CAS which uses the Julia core library to its fullest. It is built from the ground up with performance in mind, with specialized structures for automatic simplification that achieves the performance of the most optimized C&#43;&#43; libraries. It exploits parallelism at every level, with the symbolic simplification able to exploit Julia&#39;s task-based multithreading to transforming symbolic equations back into parallelized Julia code.</p>
-<p>This reconstruction of the idea of a CAS into Julia&#39;s type system is extendable in every direction. New term types enable fast symbolic arithmetic on non-standard algebras while extension libraries like ModelingToolkit build a bridge from symbolics to numerics. As the future of Julia looks bright, Symbolics.jl and its ecosystem will be the common foundation on which the next generation Domain-Specific Languages &#40;DSLs&#41; will be constructed, where all of these domains will be automatically updated and accelerated through the never ending growth of this system.</p>
+<p>Symbolics.jl is the answer. Symbolics.jl is a pure Julia CAS which uses the Julia core library to its fullest. It is built from the ground up with performance in mind. We use specialized structures for automatic simplification to match the performance of the most fully optimized C&#43;&#43; libraries. It exploits parallelism at every level; our symbolic simplification takes advantage of Julia&#39;s task-based multithreading to transform symbolic equations into parallelized Julia code.</p>
+<p>This reconstruction of the idea of CAS in Julia&#39;s type system is entirely extensible. New term types enable fast symbolic arithmetic on standard and non-standard algebras; add-on libraries like ModelingToolkit build a bridge from symbolics to numerics. Symbolics.jl and its ecosystem will be the common foundation on which the next generation of Domain-Specific Languages &#40;DSLs&#41; will be constructed, automatically updated and accelerated through with the growth of this system.</p>
 <h2 id="the_features_of_symbolicsjl"><a href="#the_features_of_symbolicsjl" class="header-anchor">The Features of Symbolics.jl</a></h2>
 <p>Symbolics.jl at its launch in 2021 is already expansive. It includes:</p>
 <ul>
@@ -183,7 +183,7 @@
 <p>There are many ways to get involved, so if you&#39;d like some help figuring out how, please get in touch with us.</p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Shashi Gowda, Yingbo Ma, Chris Rackauckas. Last modified: February 27, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
+    &copy; Shashi Gowda, Yingbo Ma, Chris Rackauckas. Last modified: February 28, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
