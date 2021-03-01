@@ -179,7 +179,8 @@ If you want to be a part of JuliaSymbolics, that's great, you're in!
 Here are some things you can start doing:
 
 - Star our libraries like
-  [Symbolics.jl](https://github.com/JuliaSymbolics/Symbolics.jl). Such
+  [Symbolics.jl](https://github.com/JuliaSymbolics/Symbolics.jl) and
+  our extensions like [ModelingToolkit.jl](https://github.com/SciML/ModelingToolkit.jl). Such
   recognition drives our growth to sustain the project.
 - Join our chatroom to discuss with us. Our main chatroom is
   `#symbolic programming` on the [Julia Zulip](https://julialang.zulipchat.com/register/)
