@@ -56,7 +56,7 @@ integration with multiple dispatch and Julia's type system.
 
 ### The Connection to the ModelingToolkit.jl
 
-Here in the Julia world, we like differntial equations, maybe a little
+Here in the Julia world, we like differential equations, maybe a little
 too much.
 
 Symbolics.jl grew out of ModelingToolkit.jl, an equation-based modeling
