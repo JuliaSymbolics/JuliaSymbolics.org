@@ -9,12 +9,12 @@ where appropriate -->
 
 [JuliaSymbolics](https://github.com/JuliaSymbolics/) is the Julia organization dedicated to
 building a fully-featured and high performance Computer Algebra System (CAS) for the Julia
-programming language. It is currently home to two main packages:
+programming language. It is currently home to a layered architecture of packages:
 
-- [**Symbolics.jl**](https://github.com/JuliaSymbolics/Symbolics.jl) -- A fast symbolic system designed for everyday symbolic computing needs. It features:
+- Layer 3: [**Symbolics.jl**](https://github.com/JuliaSymbolics/Symbolics.jl) -- A fast symbolic system designed for everyday symbolic computing needs. It features:
     - Symbolic arithmetic with type information and multiple dispatch
     - Symbolic polynomials and trigonometric functions
-    - Pattern matching, simplification and substitution
+    - Expression simplification
     - Differentiation
     - Symbolic linear algebra (factorizations, inversion, determinants, eigencomputations, etc.)
     - Discrete math (representations of summations, products, binomial coefficients, etc.)
@@ -26,11 +26,23 @@ programming language. It is currently home to two main packages:
     - Generation of (high performance and parallel) functions from symbolic expressions
     - Fast automated sparsity detection and generation of sparse Jacobian and Hessians
 
-- [**SymbolicUtils.jl**](https://github.com/JuliaSymbolics/SymbolicUtils.jl) -- The low-level representation and expression rewriting system:
+- Layer 2: [**SymbolicUtils.jl**](https://github.com/JuliaSymbolics/SymbolicUtils.jl) -- The low-level representation and expression rewriting system:
     - Stores common expressions in a fast canonical form that is simplified by default
     - Rule-based simplification for further simplification
     - Polynomial-normalization (i.e. use polynomial algebra to expand expressions)
-    - Tools for composing code.
+
+- Layer 1: [**Metatheory.jl**](https://github.com/JuliaSymbolics/Metatheory.jl) -- General purpose algebraic metaprogramming and symbolic computation library.
+    - A powerful expression rewriting system and first-class pattern matching engine, based on the pattern matcher in the [SICM book](https://mitpress.mit.edu/sites/default/files/titles/content/sicm_edition_2/book.html).
+    - An eDSL (domain specific language) to define different kinds of symbolic rewrite rules.
+    - A flexible library of rewriter combinators.
+    - E-graph rewriting (equality saturation) system and pattern matcher, inspired from the [egg library](https://egraphs-good.github.io/)
+    - Backtracking and non-deterministic term rewriting using e-graphs.
+    - Features available as generic as possible: rewrite on Julia native `Expr`, Symbolics.jl expressions or any expression satisfying [TermInterface.jl](https://github.com/JuliaSymbolics/TermInterface.jl).
+
+- Layer 0: [**TermInterface.jl**](https://github.com/JuliaSymbolics/TermInterface.jl) -- Shared generic interface for symbolic expressions.
+    - Definition of general functions for fast primitive manipulation of symbolic expressions.
+    - Define methods for your expression types for the functions in this interface to use [Metatheory.jl](https://github.com/JuliaSymbolics/Metatheory.jl) features on any expression type.
+
 
 ## Extension Ecosystem
 
