@@ -80,15 +80,15 @@
 
 <!-- Content appended here -->
 <div class="franklin-content"><h1 id="juliasymbolics_-_home"><a href="#juliasymbolics_-_home" class="header-anchor">JuliaSymbolics - Home</a></h1>
-<p><a href="https://github.com/JuliaSymbolics/">JuliaSymbolics</a> is the Julia organization dedicated to building a fully-featured and high performance Computer Algebra System &#40;CAS&#41; for the Julia programming language. It is currently home to two main packages:</p>
+<p><a href="https://github.com/JuliaSymbolics/">JuliaSymbolics</a> is the Julia organization dedicated to building a fully-featured and high performance Computer Algebra System &#40;CAS&#41; for the Julia programming language. It is currently home to a layered architecture of packages:</p>
 <ul>
-<li><p><a href="https://github.com/JuliaSymbolics/Symbolics.jl"><strong>Symbolics.jl</strong></a> – A fast symbolic system designed for everyday symbolic computing needs. It features:</p>
+<li><p>Layer 3: <a href="https://github.com/JuliaSymbolics/Symbolics.jl"><strong>Symbolics.jl</strong></a> – A fast symbolic system designed for everyday symbolic computing needs. It features:</p>
 <ul>
 <li><p>Symbolic arithmetic with type information and multiple dispatch</p>
 </li>
 <li><p>Symbolic polynomials and trigonometric functions</p>
 </li>
-<li><p>Pattern matching, simplification and substitution</p>
+<li><p>Expression simplification</p>
 </li>
 <li><p>Differentiation</p>
 </li>
@@ -112,7 +112,7 @@
 </li>
 </ul>
 </li>
-<li><p><a href="https://github.com/JuliaSymbolics/SymbolicUtils.jl"><strong>SymbolicUtils.jl</strong></a> – The low-level representation and expression rewriting system:</p>
+<li><p>Layer 2: <a href="https://github.com/JuliaSymbolics/SymbolicUtils.jl"><strong>SymbolicUtils.jl</strong></a> – The low-level representation and expression rewriting system:</p>
 <ul>
 <li><p>Stores common expressions in a fast canonical form that is simplified by default</p>
 </li>
@@ -120,7 +120,29 @@
 </li>
 <li><p>Polynomial-normalization &#40;i.e. use polynomial algebra to expand expressions&#41;</p>
 </li>
-<li><p>Tools for composing code.</p>
+</ul>
+</li>
+<li><p>Layer 1: <a href="https://github.com/JuliaSymbolics/Metatheory.jl"><strong>Metatheory.jl</strong></a> – General purpose algebraic metaprogramming and symbolic computation library.</p>
+<ul>
+<li><p>A powerful expression rewriting system and first-class pattern matching engine, based on the pattern matcher in the <a href="https://mitpress.mit.edu/sites/default/files/titles/content/sicm_edition_2/book.html">SICM book</a>.</p>
+</li>
+<li><p>An eDSL &#40;domain specific language&#41; to define different kinds of symbolic rewrite rules.</p>
+</li>
+<li><p>A flexible library of rewriter combinators.</p>
+</li>
+<li><p>E-graph rewriting &#40;equality saturation&#41; system and pattern matcher, inspired from the <a href="https://egraphs-good.github.io/">egg library</a></p>
+</li>
+<li><p>Backtracking and non-deterministic term rewriting using e-graphs.</p>
+</li>
+<li><p>Features available as generic as possible: rewrite on Julia native <code>Expr</code>, Symbolics.jl expressions or any expression satisfying <a href="https://github.com/JuliaSymbolics/TermInterface.jl">TermInterface.jl</a>.</p>
+</li>
+</ul>
+</li>
+<li><p>Layer 0: <a href="https://github.com/JuliaSymbolics/TermInterface.jl"><strong>TermInterface.jl</strong></a> – Shared generic interface for symbolic expressions.</p>
+<ul>
+<li><p>Definition of general functions for fast primitive manipulation of symbolic expressions.</p>
+</li>
+<li><p>Define methods for your expression types for the functions in this interface to use <a href="https://github.com/JuliaSymbolics/Metatheory.jl">Metatheory.jl</a> features on any expression type.</p>
 </li>
 </ul>
 </li>
@@ -185,7 +207,7 @@
 </ul>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Shashi Gowda, Yingbo Ma, Chris Rackauckas. Last modified: March 12, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl and <a href="https://julialang.org/">The Julia Programming Language</a></a>.
+    &copy; Shashi Gowda, Yingbo Ma, Chris Rackauckas. Last modified: January 05, 2022. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl and <a href="https://julialang.org/">The Julia Programming Language</a></a>.
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
