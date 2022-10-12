@@ -32,7 +32,7 @@ programming language. It is currently home to a layered architecture of packages
     - Polynomial-normalization (i.e. use polynomial algebra to expand expressions)
 
 - Layer 1: [**Metatheory.jl**](https://github.com/JuliaSymbolics/Metatheory.jl) -- General purpose algebraic metaprogramming and symbolic computation library.
-    - A powerful expression rewriting system and first-class pattern matching engine, based on the pattern matcher in the [SICM book](https://mitpress.mit.edu/sites/default/files/titles/content/sicm_edition_2/book.html).
+    - A powerful expression rewriting system and first-class pattern matching engine, based on the pattern matcher in the [SICM book](https://mitpress.mit.edu/9780262028967/structure-and-interpretation-of-classical-mechanics/).
     - An eDSL (domain specific language) to define different kinds of symbolic rewrite rules.
     - A flexible library of rewriter combinators.
     - E-graph rewriting (equality saturation) system and pattern matcher, inspired from the [egg library](https://egraphs-good.github.io/)
