@@ -30,7 +30,7 @@ list of repositories.
 ### Discourse
 
 Our open webform is provided courteously of the
-[Julia programming language disourse](https://discourse.julialang.org/)
+[Julia programming language discourse](https://discourse.julialang.org/)
 using the tag `symbolics`. When using this discourse, you must adhere to
 [the Julia community rules](https://julialang.org/community/).
 
