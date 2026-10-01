@@ -31,23 +31,23 @@ programming language. It is currently home to a layered architecture of packages
     - Rule-based simplification for further simplification
     - Polynomial-normalization (i.e. use polynomial algebra to expand expressions)
 
-- Layer 1: [**Metatheory.jl**](https://github.com/JuliaSymbolics/Metatheory.jl) -- General purpose algebraic metaprogramming and symbolic computation library.
-    - A powerful expression rewriting system and first-class pattern matching engine, based on the pattern matcher in the [SICM book](https://mitpress.mit.edu/9780262028967/structure-and-interpretation-of-classical-mechanics/).
-    - An eDSL (domain specific language) to define different kinds of symbolic rewrite rules.
-    - A flexible library of rewriter combinators.
-    - E-graph rewriting (equality saturation) system and pattern matcher, inspired from the [egg library](https://egraphs-good.github.io/)
-    - Backtracking and non-deterministic term rewriting using e-graphs.
-    - Features available as generic as possible: rewrite on Julia native `Expr`, Symbolics.jl expressions or any expression satisfying [TermInterface.jl](https://github.com/JuliaSymbolics/TermInterface.jl).
-
-- Layer 0: [**TermInterface.jl**](https://github.com/JuliaSymbolics/TermInterface.jl) -- Shared generic interface for symbolic expressions.
+- Layer 1: [**TermInterface.jl**](https://github.com/JuliaSymbolics/TermInterface.jl) -- Shared generic interface for symbolic expressions, used by SymbolicUtils.jl, Symbolics.jl, and Metatheory.jl.
     - Definition of general functions for fast primitive manipulation of symbolic expressions.
-    - Define methods for your expression types for the functions in this interface to use [Metatheory.jl](https://github.com/JuliaSymbolics/Metatheory.jl) features on any expression type.
+    - Define methods for your expression types for the functions in this interface to make them usable with TermInterface-compatible tools.
 
 
 ## Extension Ecosystem
 
 Due to its deep connection to the expansive Julia package ecosystem, many organizations utilize the building
 blocks offered by JuliaSymbolics as the underpinning of their symbolic packages to build and extend the ecosystem.
+
+- [**Metatheory.jl**](https://github.com/JuliaSymbolics/Metatheory.jl) -- General purpose algebraic metaprogramming and e-graph rewriting on TermInterface-compatible expressions
+    - A powerful expression rewriting system and first-class pattern matching engine, based on the pattern matcher in the [SICM book](https://mitpress.mit.edu/9780262028967/structure-and-interpretation-of-classical-mechanics/).
+    - An eDSL (domain specific language) to define different kinds of symbolic rewrite rules.
+    - A flexible library of rewriter combinators.
+    - E-graph rewriting (equality saturation) system and pattern matcher, inspired from the [egg library](https://egraphs-good.github.io/)
+    - Backtracking and non-deterministic term rewriting using e-graphs.
+    - Features available as generic as possible: rewrite on Julia native `Expr`, Symbolics.jl expressions or any expression satisfying [TermInterface.jl](https://github.com/JuliaSymbolics/TermInterface.jl).
 
 - [**ModelingToolkit.jl**](https://github.com/SciML/ModelingToolkit.jl) -- Symbolic representations of common numerical systems
     - Ordinary differential equations
